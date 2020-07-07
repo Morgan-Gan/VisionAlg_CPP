@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{b2c03ef8-da90-473e-b9d0-784bcb2bb74a}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{fdeb6feb-3a12-4799-b82b-f3cdbf7da184}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{8f704bec-a30e-438b-a6ae-0d674fca7553}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{9b141ebd-a68d-4f94-8f8b-af2508335877}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{af2baa65-2b9a-4759-82be-13104e0cbac9}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="SlowFast-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ISlowFastExp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\cmmobj\log4cxx\Loging.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="InitMng.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionRecg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ISlowFastExp.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\cmmobj\log4cxx\Loging.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitMng.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionRecg.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+﻿生成启动时间为 2020/1/22 9:43:11。
+     1>项目“D:\lianxi\VS_Projects\VisionAlg_CPP\src\AlgModule\TargetTrack\DeepSort\DeepSort.vcxproj”在节点 4 上(Rebuild 个目标)。
+     1>Rebuild:
+         "D:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /rebuild "D:\lianxi\VS_Projects\VisionAlg_CPP\src\AlgModule\TargetTrack\DeepSort\DeepSort.vcxproj" "/solution:D:\lianxi\VS_Projects\VisionAlg_CPP\VisionAlg.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/ganhaiyang/VS_Projects/VisionAlg_CPP/src/AlgModule/TargetTrack/DeepSort" on root@10.0.14.49 (SSH)
+         rm -rf .Release/libDeepSort.so
+         rm -rf ../../../../bin/libDeepSort.so
+         VisualGDB: Sending 7 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/ganhaiyang/VS_Projects/VisionAlg_CPP/src/AlgModule/TargetTrack/DeepSort" on root@10.0.14.49 (SSH)
+         g++ -std=gnu++11 -g -w -Wno-deprecated -fno-omit-frame-pointer -rdynamic -pthread -D__linux -D__DEBUG  -I./ -I../../../Include/common_inc -I../../../Include/thirdparty_inc -I../../../Common/cmmobj -I../../../Common/template -I../../../Common/template/tuple -I../../../Common/template/msgbus -DNDEBUG=1 -DRELEASE=1  -fPIC -c ../../../Common/cmmobj/log4cxx/Loging.cpp -o .Release/Loging.o -MD -MF .Release/Loging.dep
+         g++ -std=gnu++11 -g -w -Wno-deprecated -fno-omit-frame-pointer -rdynamic -pthread -D__linux -D__DEBUG  -I./ -I../../../Include/common_inc -I../../../Include/thirdparty_inc -I../../../Common/cmmobj -I../../../Common/template -I../../../Common/template/tuple -I../../../Common/template/msgbus -DNDEBUG=1 -DRELEASE=1  -fPIC -c IDeepSortExp.cpp -o .Release/IDeepSortExp.o -MD -MF .Release/IDeepSortExp.dep
+         g++ -std=gnu++11 -g -w -Wno-deprecated -fno-omit-frame-pointer -rdynamic -pthread -D__linux -D__DEBUG  -I./ -I../../../Include/common_inc -I../../../Include/thirdparty_inc -I../../../Common/cmmobj -I../../../Common/template -I../../../Common/template/tuple -I../../../Common/template/msgbus -DNDEBUG=1 -DRELEASE=1  -fPIC -c InitMng.cpp -o .Release/InitMng.o -MD -MF .Release/InitMng.dep
+         g++ -shared -o .Release/libDeepSort.so -Wl,-gc-sections   -L../../../../lib/thirdparty_lib/log -L/usr/lib64 -Wl,--start-group .Release/Loging.o .Release/IDeepSortExp.o .Release/InitMng.o -llog4cxx -lboost_filesystem -lboost_system  -Wl,--rpath='$ORIGIN'  -Wl,-soname,libDeepSort.so -Wl,--rpath='./':'../lib/thirdparty_lib/log':'../lib/thirdparty_lib/boost' -Wl,--end-group
+         cp -rf .Release/libDeepSort.so ../../../../bin
+     1>已完成生成项目“D:\lianxi\VS_Projects\VisionAlg_CPP\src\AlgModule\TargetTrack\DeepSort\DeepSort.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:36.63

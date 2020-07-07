@@ -1,0 +1,20 @@
+﻿生成启动时间为 2020/1/22 9:43:10。
+     1>项目“D:\lianxi\VS_Projects\VisionAlg_CPP\src\AlgModule\ActionRecg\SlowFast\SlowFast.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>Rebuild:
+         "D:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /rebuild "D:\lianxi\VS_Projects\VisionAlg_CPP\src\AlgModule\ActionRecg\SlowFast\SlowFast.vcxproj" "/solution:D:\lianxi\VS_Projects\VisionAlg_CPP\VisionAlg.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/ganhaiyang/VS_Projects/VisionAlg_CPP/src/AlgModule/ActionRecg/SlowFast" on root@10.0.14.49 (SSH)
+         rm -rf .Release/libSlowFast.so
+         rm -rf ../../../../bin/libSlowFast.so
+         VisualGDB: Sending 9 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/ganhaiyang/VS_Projects/VisionAlg_CPP/src/AlgModule/ActionRecg/SlowFast" on root@10.0.14.49 (SSH)
+         g++ -std=gnu++11 -g -w -Wno-deprecated -fno-omit-frame-pointer -rdynamic -pthread -D__linux -D__DEBUG -DUSE_PNET_MULTI_THREAD -DLOG_OUT  -I./ -I../../../Include/common_inc -I../../../Include/thirdparty_inc -I../../../Common/cmmobj -I../../../Common/template -I../../../Common/template/tuple -I../../../Common/template/msgbus -I../../../Include/thirdparty_inc/torch -I../../../Include/thirdparty_inc/torch/torch/csrc/api/include -DNDEBUG=1 -DRELEASE=1  -fPIC -c ../../../Common/cmmobj/log4cxx/Loging.cpp -o .Release/Loging.o -MD -MF .Release/Loging.dep
+         g++ -std=gnu++11 -g -w -Wno-deprecated -fno-omit-frame-pointer -rdynamic -pthread -D__linux -D__DEBUG -DUSE_PNET_MULTI_THREAD -DLOG_OUT  -I./ -I../../../Include/common_inc -I../../../Include/thirdparty_inc -I../../../Common/cmmobj -I../../../Common/template -I../../../Common/template/tuple -I../../../Common/template/msgbus -I../../../Include/thirdparty_inc/torch -I../../../Include/thirdparty_inc/torch/torch/csrc/api/include -DNDEBUG=1 -DRELEASE=1  -fPIC -c InitMng.cpp -o .Release/InitMng.o -MD -MF .Release/InitMng.dep
+         g++ -std=gnu++11 -g -w -Wno-deprecated -fno-omit-frame-pointer -rdynamic -pthread -D__linux -D__DEBUG -DUSE_PNET_MULTI_THREAD -DLOG_OUT  -I./ -I../../../Include/common_inc -I../../../Include/thirdparty_inc -I../../../Common/cmmobj -I../../../Common/template -I../../../Common/template/tuple -I../../../Common/template/msgbus -I../../../Include/thirdparty_inc/torch -I../../../Include/thirdparty_inc/torch/torch/csrc/api/include -DNDEBUG=1 -DRELEASE=1  -fPIC -c ISlowFastExp.cpp -o .Release/ISlowFastExp.o -MD -MF .Release/ISlowFastExp.dep
+         g++ -std=gnu++11 -g -w -Wno-deprecated -fno-omit-frame-pointer -rdynamic -pthread -D__linux -D__DEBUG -DUSE_PNET_MULTI_THREAD -DLOG_OUT  -I./ -I../../../Include/common_inc -I../../../Include/thirdparty_inc -I../../../Common/cmmobj -I../../../Common/template -I../../../Common/template/tuple -I../../../Common/template/msgbus -I../../../Include/thirdparty_inc/torch -I../../../Include/thirdparty_inc/torch/torch/csrc/api/include -DNDEBUG=1 -DRELEASE=1  -fPIC -c ActionRecg.cpp -o .Release/ActionRecg.o -MD -MF .Release/ActionRecg.dep
+         g++ -shared -o .Release/libSlowFast.so -Wl,-gc-sections   -L../../../../lib/thirdparty_lib/log -L/usr/lib64 -Wl,--start-group .Release/Loging.o .Release/InitMng.o .Release/ISlowFastExp.o .Release/ActionRecg.o -llog4cxx -lboost_filesystem -lboost_system -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lc10 -ltorch  -Wl,--rpath='$ORIGIN'  -Wl,-soname,libSlowFast.so -Wl,--rpath='./':'../lib/thirdparty_lib/log':'../lib/thirdparty_lib/boost':'../lib/thirdparty_lib/torch' -Wl,--end-group
+         cp -rf .Release/libSlowFast.so ../../../../bin
+     1>已完成生成项目“D:\lianxi\VS_Projects\VisionAlg_CPP\src\AlgModule\ActionRecg\SlowFast\SlowFast.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:01:15.74

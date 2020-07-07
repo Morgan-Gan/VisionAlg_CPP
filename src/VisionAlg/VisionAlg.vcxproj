@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C8990F14-6B0D-4311-8435-D91748255C60}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.0.14.49\0003\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.0.14.49\0003\4.8.5\x86_64-unknown-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.0.14.49\0003\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.0.14.49\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.0.14.49\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.0.14.49\0005\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\10.0.14.49\0001\include;.\;..\Include\common_inc;..\Include\thirdparty_inc;..\Common\cmmobj;..\Common\template;..\Common\template\tuple;..\Common\template\msgbus;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)VisionAlg-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\cmmobj\log4cxx\Loging.cpp" />
+    <ClCompile Include="AlgModuleMng.cpp" />
+    <ClCompile Include="CfgMng.cpp" />
+    <ClCompile Include="IVisionAlgExp.cpp" />
+    <ClCompile Include="MsgBusMng.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\cmmobj\log4cxx\Loging.h" />
+    <ClInclude Include="..\Include\thirdparty_inc\boost\ref.hpp" />
+    <ClInclude Include="AlgModuleMng.h" />
+    <ClInclude Include="CfgMng.h" />
+    <ClInclude Include="IVisionAlgExp.h" />
+    <ClInclude Include="MsgBusMng.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="VisionAlg-Release.vgdbsettings" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

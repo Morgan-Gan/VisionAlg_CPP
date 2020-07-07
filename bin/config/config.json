@@ -1,0 +1,39 @@
+{
+	"AlgModule":
+	{
+		"ObjDetectModule":
+		[
+			{
+				"name":"Yolov3",
+				"access":{"type":"tcp","port":"1088","num":"50"},
+				"report":{"type":"rpc","ip":"127.0.0.1","port":"47390","conn":"100"},
+				"savedb":{"type":"redis","ip":"127.0.0.1","port":"47393","pwd":"","max_conn":"20","init_conn":"5","conn_timeout":"2","rw_timeout":"2"},
+				"cfgtool":{"type":"tcp","port":"12315","num":"50"},
+				"other":{"tcpdump":"eno1","timediff_inter":"10","protect_inter":"30"}
+			}
+		],
+		"TargetTrackModule":
+		[
+			{
+				"name":"DeepSort",
+				"access":{"type":"tcp","port":"1088","num":"50"},
+				"report":{"type":"rpc","ip":"127.0.0.1","port":"47390","conn":"100"},
+				"savedb":{"type":"redis","ip":"127.0.0.1","port":"47393","pwd":"","max_conn":"20","init_conn":"5","conn_timeout":"2","rw_timeout":"2"},
+				"cfgtool":{"type":"tcp","port":"12315","num":"50"},
+				"other":{"tcpdump":"eno1","timediff_inter":"10","protect_inter":"30"}
+			}
+		],
+		"ActionRecgModule":
+		[
+			{
+				"name":"SlowFast",
+				"access":{"type":"tcp","port":"1088","num":"50"},
+				"report":{"type":"rpc","ip":"127.0.0.1","port":"47390","conn":"100"},
+				"savedb":{"type":"redis","ip":"127.0.0.1","port":"47393","pwd":"","max_conn":"20","init_conn":"5","conn_timeout":"2","rw_timeout":"2"},
+				"cfgtool":{"type":"tcp","port":"12315","num":"50"},
+				"other":{"tcpdump":"eno1","timediff_inter":"10","protect_inter":"30"}
+			}
+		]
+	}
+}
+
