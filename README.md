@@ -1,8 +1,5 @@
 # VisionAlg_CPP
-For activity recongnition，object detection and tracking project
-
-# SlowFast-Network-pytorch
-An easy PyTorch implement of SlowFast-Network ["SlowFast Networks for Video Recognition"](https://arxiv.org/abs/1812.03982).
+For activity recongnition，object detection and tracking project, which is based on an easy PyTorch implement of SlowFast-Network ["SlowFast Networks for Video Recognition"](https://arxiv.org/abs/1812.03982).
 
 We also complete a real-time action detection demo. The demo is orgnized as：
 
